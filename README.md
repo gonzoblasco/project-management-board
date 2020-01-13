@@ -1,4 +1,6 @@
-# Basic Project Management Board (just Front End using internal JSON)
+# Basic Project Management Board
+
+## (just Front End using internal JSON)
 
 This is a really simple project where I used _High Order Components_, _Styled Components_ and _HTML5 Drag and Drop_, allowing user to arrange their tasks in the respected lane.
 
