@@ -20,6 +20,9 @@ class Board extends Component {
     this.state = {
       tickets: []
     }
+
+    this.onDragOver = this.onDragOver.bind(this)
+    this.onDrop = this.onDrop.bind(this)
   }
 
   componentDidUpdate(prevProps) {
@@ -40,9 +43,10 @@ class Board extends Component {
     const id = e.dataTransfer.getData('id')
 
     const tickets = this.state.tickets.filter(ticket => {
-      if (ticket.id === id) {
+      if (ticket.id === parseInt(id)) {
         ticket.lane = laneId
       }
+
       return ticket
     })
 
